@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B2F3A" >
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="@string/name_hint"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edit_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_name"
+        android:layout_below="@+id/edit_name"
+        android:hint="@string/city_hint"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/yes_b"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/edit_city"
+        android:layout_below="@+id/edit_city"
+        android:text="@string/yes_b" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yes_b"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:onClick="onPressClear"
+        android:text="@string/clear" />
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+package com.example.lowcost;
+
+public class personaCiudad {
+		private Long id;
+		private String Nombre="";
+		private String Ciudad="";
+		private float CX;
+		private float CY;
+
+		public String getNombre(){
+			return Nombre;
+		}
+		public String getCiudad(){
+			return Ciudad;
+		}
+		public void setNombre(String nombre) {
+	        Nombre = nombre;
+	    }
+		public void setCiudad(String ciudad) {
+			Ciudad = ciudad;
+		}
+}
